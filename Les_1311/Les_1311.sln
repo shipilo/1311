@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Les_1311", "Les_1311.csproj", "{5C8E5D05-CF50-44CF-946F-C9D898592C55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Met_1311", "..\Met_1311\Met_1311.csproj", "{E97FDA32-15FD-40FC-A4C0-3D1561BB282E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C8E5D05-CF50-44CF-946F-C9D898592C55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C8E5D05-CF50-44CF-946F-C9D898592C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C8E5D05-CF50-44CF-946F-C9D898592C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C8E5D05-CF50-44CF-946F-C9D898592C55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E97FDA32-15FD-40FC-A4C0-3D1561BB282E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E97FDA32-15FD-40FC-A4C0-3D1561BB282E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E97FDA32-15FD-40FC-A4C0-3D1561BB282E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E97FDA32-15FD-40FC-A4C0-3D1561BB282E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A346A197-9869-4C8B-AB2B-F827777C4D31}
+	EndGlobalSection
+EndGlobal
