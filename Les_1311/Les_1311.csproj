@@ -43,8 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BeachGame.cs" />
+    <Compile Include="FishingGame.cs" />
+    <Compile Include="IGame.cs" />
+    <Compile Include="MousetrapGame.cs" />
+    <Compile Include="MyGame.cs" />
+    <Compile Include="PostmanGame.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeaGame.cs" />
+    <Compile Include="SlideGame.cs" />
+    <Compile Include="Team.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
