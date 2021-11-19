@@ -13,7 +13,7 @@ namespace Met_1311
 
         public override double GetSquare()
         {
-            return 2 * Math.PI * Size * Size;
+            return Math.PI * Size * Size;
         }
     }
 }
