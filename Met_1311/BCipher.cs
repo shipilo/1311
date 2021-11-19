@@ -2,8 +2,15 @@
 
 namespace Met_1311
 {
-    class BCipher : Chiper, ICipher
+    class BCipher : ICipher
     {
+        private static string[] alphabets = {
+            "abcdefghijklmnopqrstuvwxuz",
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+            "абвгдеёжзийклмнопрстуфхцчшщъыьэюя",
+            "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЬЫЭЮЯ"
+        };
+
         private int i;
 
         public BCipher(int i)
@@ -16,13 +23,21 @@ namespace Met_1311
             string output = "";
             foreach (char letter in text)
             {
-                if (alphabet_eng.Contains(letter))
+                if (alphabets[0].Contains(letter))
                 {
-                    output += alphabet_eng[alphabet_eng.IndexOf(letter) + i];
+                    output += alphabets[0][(alphabets[0].IndexOf(letter) + i % 26) % 26];
                 }
-                else if (alphabet_ru.Contains(letter))
+                else if (alphabets[1].Contains(letter))
                 {
-                    output += alphabet_ru[alphabet_ru.IndexOf(letter) + i];
+                    output += alphabets[1][(alphabets[1].IndexOf(letter) + i % 26) % 26];
+                }
+                else if (alphabets[2].Contains(letter))
+                {
+                    output += alphabets[2][(alphabets[2].IndexOf(letter) + i % 33) % 33];
+                }
+                else if (alphabets[3].Contains(letter))
+                {
+                    output += alphabets[3][(alphabets[3].IndexOf(letter) + i % 33) % 33];
                 }
                 else
                 {
@@ -36,13 +51,21 @@ namespace Met_1311
             string output = "";
             foreach (char letter in detext)
             {
-                if (alphabet_eng.Contains(letter))
+                if (alphabets[0].Contains(letter))
                 {
-                    output += alphabet_eng[alphabet_eng.IndexOf(letter) - i];
+                    output += alphabets[0][(alphabets[0].IndexOf(letter) + (26 - i % 26)) % 26];
                 }
-                else if (alphabet_ru.Contains(letter))
+                else if (alphabets[1].Contains(letter))
                 {
-                    output += alphabet_ru[alphabet_ru.IndexOf(letter) - i];
+                    output += alphabets[1][(alphabets[1].IndexOf(letter) + (26 - i % 26)) % 26];
+                }
+                else if (alphabets[2].Contains(letter))
+                {
+                    output += alphabets[2][(alphabets[2].IndexOf(letter) + (33 - i % 33)) % 33];
+                }
+                else if (alphabets[3].Contains(letter))
+                {
+                    output += alphabets[3][(alphabets[3].IndexOf(letter) + (33 - i % 33)) % 33];
                 }
                 else
                 {

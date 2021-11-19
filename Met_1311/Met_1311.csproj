@@ -46,7 +46,6 @@
   <ItemGroup>
     <Compile Include="ACipher.cs" />
     <Compile Include="BCipher.cs" />
-    <Compile Include="Chiper.cs" />
     <Compile Include="Circle.cs" />
     <Compile Include="Figure.cs" />
     <Compile Include="ICipher.cs" />

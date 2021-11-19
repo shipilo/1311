@@ -2,8 +2,11 @@
 
 namespace Met_1311
 {
-    class ACipher : Chiper, ICipher
+    class ACipher : ICipher
     {
+        protected static string alphabet_eng = "abcdefghijklmnopqrstuvwxuzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        protected static string alphabet_ru = "абвгдеёжзийклмнопрстуфхцчшщъьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЬЭЮЯ";
+
         public string Encode(string text)
         {
             string output = "";
@@ -11,11 +14,33 @@ namespace Met_1311
             {
                 if (alphabet_eng.Contains(letter))
                 {
-                    output += alphabet_eng[alphabet_eng.IndexOf(letter) + 1];
+                    if (letter == 'z')
+                    {
+                        output += 'a';
+                    }
+                    else if (letter == 'Z')
+                    {
+                        output += 'A';
+                    }
+                    else
+                    {
+                        output += alphabet_eng[alphabet_eng.IndexOf(letter) + 1];
+                    }
                 }
                 else if (alphabet_ru.Contains(letter))
                 {
-                    output += alphabet_ru[alphabet_ru.IndexOf(letter) + 1];
+                    if (letter == 'я')
+                    {
+                        output += 'А';
+                    }
+                    else if (letter == 'Я')
+                    {
+                        output += 'А';
+                    }
+                    else
+                    {
+                        output += alphabet_ru[alphabet_ru.IndexOf(letter) + 1];
+                    }
                 }
                 else
                 {
@@ -31,11 +56,33 @@ namespace Met_1311
             {
                 if (alphabet_eng.Contains(letter))
                 {
-                    output += alphabet_eng[alphabet_eng.IndexOf(letter) - 1];
+                    if (letter == 'a')
+                    {
+                        output += 'z';
+                    }
+                    else if (letter == 'A')
+                    {
+                        output += 'Z';
+                    }                    
+                    else
+                    {
+                        output += alphabet_eng[alphabet_eng.IndexOf(letter) - 1];
+                    }
                 }
                 else if (alphabet_ru.Contains(letter))
                 {
-                    output += alphabet_ru[alphabet_ru.IndexOf(letter) - 1];
+                    if (letter == 'а')
+                    {
+                        output += 'я';
+                    }
+                    else if (letter == 'А')
+                    {
+                        output += 'Я';
+                    }
+                    else
+                    {
+                        output += alphabet_ru[alphabet_ru.IndexOf(letter) - 1];
+                    }
                 }
                 else
                 {
