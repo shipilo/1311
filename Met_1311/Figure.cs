@@ -43,5 +43,10 @@ namespace Met_1311
         {
             visible = !visible;
         }
+
+        public string GetInfo()
+        {
+            return $"({location.X}; {location.Y}) {color} {visible}";
+        }
     }
 }
