@@ -6,7 +6,7 @@ namespace Les_1311
     {
         public void Play(string name)
         {
-            Console.WriteLine($"name играет в мою игру");
+            Console.WriteLine($"{name} играет в мою игру");
         }
     }
 }

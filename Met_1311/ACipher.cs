@@ -31,7 +31,7 @@ namespace Met_1311
                 {
                     if (letter == 'я')
                     {
-                        output += 'А';
+                        output += 'а';
                     }
                     else if (letter == 'Я')
                     {
